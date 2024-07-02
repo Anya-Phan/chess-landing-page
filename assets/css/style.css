@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #313131;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Merriweather", serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Common Class */
+.content {
+    width: 1222px;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+.btn {
+    font-family: "Golos Text", sans-serif;
+    border-radius: 66px;
+    display: flex;
+    padding: 0 49px;
+    margin: auto;
+    width: 263px;
+    height: 72px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+/* Animation */
+@keyframes run-line {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* Hero */
+.hero {
+    height: 700px;
+    background: url(../image/hero__background.png) center / auto 100%;
+}
+
+.hero__logo {
+    margin: 26px 0 62px;
+}
+
+.hero__text-wrap {
+    max-width: 542px;
+}
+
+.hero__heading-wrap {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.hero__heading:nth-child(2) {
+    text-align: center;
+}
+
+.hero__heading:nth-child(3) {
+    text-align: right;
+}
+
+.hero__subtitle {
+    font-family: "Golos Text", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    margin: 24px 0 40px;
+}
+
+.hero__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.hero__btn-left {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+.hero__btn-left:hover {
+    background: #fbce51;
+    color: #1f1f1f;
+}
+
+.hero__btn-right {
+    color: #1f1f1f;
+    border: 2px solid #1f1f1f;
+}
+
+.hero__btn-right:hover {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+/* Running Line */
+.run-line {
+    background-color: #f54932;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+}
+.run-line-wrap {
+    animation: run-line 14s linear infinite;
+    display: flex;
+}
+.run-line__text {
+    margin-left: 12px;
+    display: inline;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.run-line__text::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+/* Support */
+.support__top {
+    display: flex;
+    margin: 80px 0 64px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+/* .support__img-top {
+    margin-left: auto;
+} */
+.support__title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.support__title span {
+    font-weight: 700;
+    color: #f54932;
+}
+
+.support__bottom {
+    display: flex;
+    gap: 17px;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.support__text {
+}
+
+.support__table {
+    margin: 60px 0 48px;
+    width: 100%;
+}
+
+.support__table tr:not(:first-child) td {
+    border-top: 2px solid #d0d0d0;
+}
+
+.support__col-title,
+.support__col-subtitle {
+    font-family: "Golos Text", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.support__col-subtitle {
+    padding: 16px 0 16px 16px;
+}
+
+.support__col-subtitle span {
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+}
+
+.support__col-title {
+    opacity: 70%;
+    padding: 16px 16px 16px 0;
+    border-right: 2px solid #d0d0d0;
+    width: 47%;
+}
+
+.support__table tr:first-child td {
+    padding-top: 0;
+}
+
+.support__table tr:last-child td {
+    padding-bottom: 0;
+}
+
+.support__subtitle {
+    font-family: "Golos Text", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #3057a2;
+    margin-bottom: 12px;
+}
